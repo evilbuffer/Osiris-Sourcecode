@@ -1,0 +1,107 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  utils.c
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,89): warning C4047: 'function': 'LPWSTR' differs in levels of indirection from 'wchar_t (*)[255]'
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,83): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(410,63): warning C4047: '=': 'DWORD' differs in levels of indirection from 'HANDLE'
+  thread.c
+  tcp_server.c
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(23,2): error C2143: syntax error: missing ')' before '{'
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(66,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(66,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(97,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(97,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(108,6): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(108,6): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(118,19): error C2039: 'OnClientReceiveData': is not a member of 'tcp_server_t'
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.h(22): message : see declaration of 'tcp_server_t'
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(119,17): error C2039: 'OnClientReceiveData': is not a member of 'tcp_server_t'
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.h(22): message : see declaration of 'tcp_server_t'
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(129,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(129,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(146,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(146,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(156,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(156,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(169,2): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(169,2): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(171,69): error C2065: 'tcp_server_callback': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\tcp_server.c(171,71): error C2065: 't': undeclared identifier
+  string.c
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(44,45): error C2146: syntax error: missing ')' before identifier 'pUI'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(44,45): error C2061: syntax error: identifier 'pUI'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(44,45): error C2059: syntax error: ';'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(44,48): error C2059: syntax error: ','
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(44,72): error C2059: syntax error: ')'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(45,47): error C2146: syntax error: missing ')' before identifier 'pUI'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(45,47): error C2061: syntax error: identifier 'pUI'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(45,47): error C2059: syntax error: ';'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.h(45,50): error C2059: syntax error: ')'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(240,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(256,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,41): warning C4047: 'function': 'LPCWSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,41): warning C4047: 'function': 'LPCSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(572,28): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(573,35): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+  socket.c
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(10,2): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(10,2): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(15,2): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(15,2): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(24,14): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(24,14): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(47,5): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(47,5): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(66,5): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(66,5): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(70,12): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(70,12): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(77,35): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(77,35): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(79,8): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(79,8): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(84,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(84,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(89,3): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(89,3): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(107,17): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(107,17): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(118,17): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(118,17): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(124,27): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(124,27): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(126,5): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(126,5): error C2224: left of '.api' must have struct/union type
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(128,6): error C2065: 'bot': undeclared identifier
+C:\Users\evilbuffer\Desktop\Osiris\common\socket.c(128,6): error C2224: left of '.api' must have struct/union type
+  registry.c
+  mem.c
+  inject.c
+C:\Users\evilbuffer\Desktop\Osiris\common\inject.c(30,54): warning C4022: 'bot': pointer mismatch for actual parameter 3
+  httptools.c
+  hooking.c
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(30,43): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(37,44): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(44,45): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(52,49): warning C4013: 'StrLengthA' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(56,45): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(60,46): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(64,55): warning C4047: '=': 'LPVOID' differs in levels of indirection from 'unsigned long'
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(172,10): warning C4022: 'memcopy': pointer mismatch for actual parameter 1
+  hde32.c
+  file.c
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(44,28): warning C4013: 'String_ToUnicodeString' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(59,26): warning C4013: 'String_FreeUnicodeString' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(214,24): warning C4013: 'StrCopyW' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(214,36): warning C4047: '=': 'LPWSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(216,25): warning C4013: 'StrCompareW' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\common\file.c(233,15): warning C4013: 'StrConcatW' undefined; assuming extern returning int
+  crypto.c
+C:\Users\evilbuffer\Desktop\Osiris\common\crypto.c(19,38): warning C4244: '=': conversion from 'WORD' to 'BYTE', possible loss of data
+  api.c
+  Generating Code...

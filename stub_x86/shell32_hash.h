@@ -1,0 +1,3 @@
+#pragma once
+#define HASH_SHELL32 0x3b42cf7f
+#define HASH_SHELL32_SHGETFOLDERPATHW 0xc7652b3f

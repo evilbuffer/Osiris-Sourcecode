@@ -1,0 +1,98 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  keylogger.c
+  pos_grabber.c
+  wininet.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(185,52): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(187,50): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(214,52): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(216,43): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(231,40): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(231,50): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(248,43): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(248,70): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(250,40): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(250,61): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(274,44): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(274,71): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\wininet.c(290,41): warning C4090: 'function': different 'const' qualifiers
+  nss3.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\nss3.c(25,12): warning C4101: 'iNewLen': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\bot\nss3.c(25,6): warning C4101: 'iRet': unreferenced local variable
+  httpgrabber.c
+  formgrabber.c
+  chromehooks.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\chromehooks.c(178,1): warning C4047: 'initializing': 'LPVOID' differs in levels of indirection from 'DWORD'
+  dns_redirect.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(71,25): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(72,16): warning C4090: '=': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(86,30): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(87,21): warning C4090: '=': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(103,40): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\bot\dns_redirect.c(103,62): warning C4090: 'function': different 'const' qualifiers
+  userhooks.c
+  unhooker.c
+  rootkit.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\rootkit.c(79,19): warning C4013: 'WriteDebugDataEx' undefined; assuming extern returning int
+  hook_persistence.c
+  hook_manager.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\hook_manager.c(135,85): warning C4047: 'function': 'PULONG' differs in levels of indirection from 'DWORD'
+C:\Users\evilbuffer\Desktop\Osiris\bot\hook_manager.c(135,77): warning C4024: 'bot': different types for formal and actual parameter 3
+C:\Users\evilbuffer\Desktop\Osiris\bot\hook_manager.c(139,83): warning C4047: 'function': 'PULONG' differs in levels of indirection from 'DWORD'
+C:\Users\evilbuffer\Desktop\Osiris\bot\hook_manager.c(139,75): warning C4024: 'bot': different types for formal and actual parameter 3
+  file_persistence.c
+  protocol.c
+  backconnect.c
+  zombie.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\zombie.c(175,38): warning C4028: formal parameter 1 different from declaration
+C:\Users\evilbuffer\Desktop\Osiris\bot\zombie.c(175,66): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\bot\zombie.c(175,52): warning C4024: 'bot': different types for formal and actual parameter 3
+  tasks.c
+  stealers.c
+  pipes.c
+  Generating Code...
+  Compiling...
+  os_info.c
+  main.c
+  ipc_tasks.c
+  ipc.c
+  install.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\install.c(112,26): warning C4013: 'File_CreateDirectory' undefined; assuming extern returning int
+  inject.c
+  dynamicconfig.c
+  debug.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\debug.c(39,18): warning C4013: 'WriteDebugDataEx' undefined; assuming extern returning int
+C:\Users\evilbuffer\Desktop\Osiris\bot\debug.c(32,18): warning C4101: 'io': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\bot\debug.c(33,11): warning C4101: 's': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\bot\debug.c(42,6): error C2371: 'WriteDebugDataEx': redefinition; different basic types
+  connection.c
+C:\Users\evilbuffer\Desktop\Osiris\bot\connection.c(110,12): warning C4101: 'pc_info': unreferenced local variable
+  common.c
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(240,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(256,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,41): warning C4047: 'function': 'LPCWSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,41): warning C4047: 'function': 'LPCSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(572,28): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(573,35): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,89): warning C4047: 'function': 'LPWSTR' differs in levels of indirection from 'wchar_t (*)[255]'
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,83): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(410,63): warning C4047: '=': 'DWORD' differs in levels of indirection from 'HANDLE'
+C:\Users\evilbuffer\Desktop\Osiris\common\crypto.c(19,38): warning C4244: '=': conversion from 'WORD' to 'BYTE', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(30,43): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(37,44): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(44,45): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(56,45): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(60,46): warning C4022: 'bot': pointer mismatch for actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(64,55): warning C4047: '=': 'LPVOID' differs in levels of indirection from 'unsigned long'
+C:\Users\evilbuffer\Desktop\Osiris\common\hooking.c(172,10): warning C4022: 'memcopy': pointer mismatch for actual parameter 1
+C:\Users\evilbuffer\Desktop\Osiris\common\inject.c(30,54): warning C4022: 'bot': pointer mismatch for actual parameter 3
+  botThreads.c
+  botkiller.c
+  bot.c
+  Generating Code...
+C:\Users\evilbuffer\Desktop\Osiris\bot\install.c(117): warning C4715: 'InstallVulture': not all control paths return a value

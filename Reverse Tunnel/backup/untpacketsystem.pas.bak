@@ -1,0 +1,155 @@
+unit untPacketSystem;
+
+{$mode delphi}
+
+interface
+
+uses
+  Windows, Winsock, Classes, SysUtils, untUtils, untClientSocket;
+
+type
+  TOnReceivedPacketBuffer = procedure(ClientSocket: TClientSocket; strBuffer: String) of object;
+
+  TBlock = packed record
+    iBlockID: Integer;
+    arr_bBuffer: array of byte;
+  end;
+
+  THeader = packed record
+    iPacketID: Integer;
+    iBlockAmount: Integer;
+    Blocks: array of TBlock;
+  end;
+
+  TPacket = packed record
+    ClientSocket: TClientSocket;
+    Header: THeader;
+  end;
+
+  TPacketSystem = class
+    private
+      m_PendingPackets: array of TPacket;
+      FOnReceivedPacketBuffer: TOnReceivedPacketBuffer;
+      procedure AddPendingPacket(Packet: TPacket);
+      function IsPacketEmpty(Packet: TPacket): Boolean;
+      procedure AddBlockToPendingPacket(ClientSocket: TClientSocket; iPacketID: Integer; iBlockID: Integer; strBlock: String);
+      procedure HandleFinishedPacket(iIndex: Integer);
+    public
+      constructor Create;
+      procedure HandleHeader(ClientSocket: TClientSocket; arr_bBuffer: array of byte; iAmount: Integer);
+      procedure HandleBlock(ClientSocket: TClientSocket; arr_bBuffer: array of byte; iAmount: Integer);
+    property
+      OnReceivedPacketBuffer: TOnReceivedPacketBuffer read FOnReceivedPacketBuffer write FOnReceivedPacketBuffer;
+  end;
+
+implementation
+
+constructor TPacketSystem.Create;
+begin
+
+end;
+
+function TPacketSystem.IsPacketEmpty(Packet: TPacket): Boolean;
+begin
+  Result := Packet.Header.iPacketID = -1;
+end;
+
+procedure TPacketSystem.AddPendingPacket(Packet: TPacket);
+var
+  i, iIndex: Integer;
+begin
+  iIndex := Length(m_PendingPackets);
+  for i := 0 to iIndex - 1 do
+  begin
+    if IsPacketEmpty(m_PendingPackets[i]) then
+    begin
+      m_PendingPackets[i] := Packet;
+      Exit;
+    end;
+  end;
+
+  SetLength(m_PendingPackets, iIndex + 1);
+  m_PendingPackets[iIndex] := Packet;
+end;
+
+procedure TPacketSystem.HandleHeader(ClientSocket: TClientSocket; arr_bBuffer: array of byte; iAmount: Integer);
+var
+  Packet: TPacket;
+  strBuffer: String;
+  arr_strData: TStringArray;
+begin
+  ZeroMemory(@Packet, sizeof(TPacket));
+  Packet.ClientSocket := ClientSocket;
+
+  SetLength(strBuffer, iAmount);
+  CopyMemory(@strBuffer[1], @arr_bBuffer[0], iAmount);
+
+  if strBuffer <> '' then
+  begin
+    arr_strData := SplitStr(strBuffer, '|', 2);
+    Packet.Header.iPacketID := StrToInt(arr_strData[0]);
+    Packet.Header.iBlockAmount := StrToInt(arr_strData[1]);
+    SetLength(Packet.Header.Blocks, Packet.Header.iBlockAmount + 1);
+    AddPendingPacket(Packet);
+  end;
+end;
+
+procedure TPacketSystem.HandleFinishedPacket(iIndex: Integer);
+var
+  Packet: TPacket;
+  strBuffer: String;
+  i: Integer;
+begin
+  Packet := m_PendingPackets[iIndex];
+
+  for i := 0 to Packet.Header.iBlockAmount - 1 do
+  begin
+    strBuffer += ByteArrayToString(Packet.Header.Blocks[i].arr_bBuffer);
+  end;
+
+
+end;
+
+procedure TPacketSystem.AddBlockToPendingPacket(ClientSocket: TClientSocket; iPacketID: Integer; iBlockID: Integer; strBlock: String);
+var
+  i, iLength: Integer;
+begin
+  iLength := Length(m_PendingPackets);
+
+   for i := 0 to iLength - 1 do
+   begin
+     if (m_PendingPackets[i].ClientSocket = ClientSocket) and (m_PendingPackets[i].Header.iPacketID = iPacketID) then
+     begin
+       SetLength(m_PendingPackets[i].Header.Blocks[iBlockID].arr_bBuffer, Length(strBlock));
+       CopyMemory(@m_PendingPackets[i].Header.Blocks[iBlockID].arr_bBuffer[0], @strBlock[1], Length(strBlock));
+
+       if m_PendingPackets[i].Header.iBlockAmount - 1 = iBlockID then
+       begin
+         HandleFinishedPacket(i);
+       end;
+       break;
+     end;
+   end;
+end;
+
+procedure TPacketSystem.HandleBlock(ClientSocket: TClientSocket; arr_bBuffer: array of byte; iAmount: Integer);
+var
+  iPacketID, iBlockID: Integer;
+  strBuffer, strBlock: String;
+  arr_strData: TStringArray;
+begin
+  SetLength(strBuffer, iAmount);
+  CopyMemory(@strBuffer[1], @arr_bBuffer[0], iAmount);
+
+  if strBuffer <> '' then
+  begin
+    arr_strData := SplitStr(strBuffer, '|', 3);
+    iPacketID := StrToInt(arr_strData[0]);
+    iBlockID := StrToint(arr_strData[1]);
+    strBlock := arr_strData[2];
+    AddBlockToPendingPacket(ClientSocket, iPacketID, iBlockID, strBlock);
+  end;
+end;
+
+end.
+

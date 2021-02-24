@@ -1,0 +1,82 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.c
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(257,176): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,100): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,96): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,106): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,102): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,132): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,128): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(260,165): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,73): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,69): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,79): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,75): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,105): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,101): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(263,138): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(295,176): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,105): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,101): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,111): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,107): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,137): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,133): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(298,170): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,86): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,82): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,92): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,88): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,118): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,114): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(301,151): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(313,176): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,101): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,97): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,107): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,103): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,133): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,129): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(316,166): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,82): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,78): warning C4024: 'bot': different types for formal and actual parameter 4
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,88): warning C4047: 'function': 'SIZE_T' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,84): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,114): warning C4047: 'function': 'ULONG' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,110): warning C4024: 'bot': different types for formal and actual parameter 9
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(319,147): warning C4047: '!=': 'NTSTATUS' differs in levels of indirection from 'void *'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(335,66): warning C4047: 'function': 'ULONG_PTR' differs in levels of indirection from 'LPVOID'
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(335,54): warning C4024: 'bot': different types for formal and actual parameter 3
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(350,21): warning C4101: 'mem': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(349,18): warning C4101: 'hThread': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(349,9): warning C4101: 'hProcess': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(351,29): warning C4101: 'ExitCode': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(351,19): warning C4101: 'ProcessId': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(349,26): warning C4101: 'hFile': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(350,15): warning C4101: 'image': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(351,8): warning C4101: 'i': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(357,16): warning C4101: 'ManualInject': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(351,10): warning C4101: 'FileSize': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(351,38): warning C4101: 'read': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\loader\main.c(350,8): warning C4101: 'buffer': unreferenced local variable
+  common.c
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(240,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(256,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,41): warning C4047: 'function': 'LPCWSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,41): warning C4047: 'function': 'LPCSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(572,28): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(573,35): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,89): warning C4047: 'function': 'LPWSTR' differs in levels of indirection from 'wchar_t (*)[255]'
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,83): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(410,63): warning C4047: '=': 'DWORD' differs in levels of indirection from 'HANDLE'
+C:\Users\evilbuffer\Desktop\Osiris\common\crypto.c(19,38): warning C4244: '=': conversion from 'WORD' to 'BYTE', possible loss of data
+  Generating Code...
+common.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+common.obj : error LNK2019: unresolved external symbol _Registry_ReadValue referenced in function _Utils_GetPath
+C:\Users\evilbuffer\Desktop\Osiris\bot\Debug\loader.exe : fatal error LNK1120: 1 unresolved externals

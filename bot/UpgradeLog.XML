@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="bot">
+</Property><Property Name="Solution File" Value="C:\Users\JohnDoe\Dropbox\v\bot\bot.sln">
+</Property><Property Name="User Options File" Value="C:\Users\JohnDoe\Dropbox\v\bot\bot.suo">
+</Property><Property Name="Date" Value="Thursday, October 13, 2016">
+</Property><Property Name="Time" Value="18:27 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="bot.sln" Description="File successfully backed up as C:\Users\JohnDoe\Dropbox\v\bot\bot.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="bot.suo" Description="File successfully backed up as C:\Users\JohnDoe\Dropbox\v\bot\bot.suo.old">
+</Event><Event ErrorLevel="0" Project="bot" Source="bot.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\bot\bot.vcproj'.">
+</Event><Event ErrorLevel="1" Project="bot" Source="bot.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="bot" Source="bot.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\bot\bot.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="bot" Source="bot.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="loader" Source="..\loader\loader.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\loader\loader.vcproj'.">
+</Event><Event ErrorLevel="1" Project="loader" Source="..\loader\loader.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="loader" Source="..\loader\loader.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\loader\loader.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="loader" Source="..\loader\loader.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="common" Source="..\common\common.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\common\common.vcproj'.">
+</Event><Event ErrorLevel="1" Project="common" Source="..\common\common.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="common" Source="..\common\common.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\common\common.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="common" Source="..\common\common.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="crc_hash" Source="..\crc_hash\crc_hash.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\crc_hash\crc_hash.vcproj'.">
+</Event><Event ErrorLevel="1" Project="crc_hash" Source="..\crc_hash\crc_hash.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="crc_hash" Source="..\crc_hash\crc_hash.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\crc_hash\crc_hash.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="crc_hash" Source="..\crc_hash\crc_hash.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="dllCrypt" Source="..\dllCrypt\dllCrypt.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\dllCrypt\dllCrypt.vcproj'.">
+</Event><Event ErrorLevel="1" Project="dllCrypt" Source="..\dllCrypt\dllCrypt.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="dllCrypt" Source="..\dllCrypt\dllCrypt.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\dllCrypt\dllCrypt.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="dllCrypt" Source="..\dllCrypt\dllCrypt.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="backconnect" Source="..\backconnect\backconnect.vcproj" Description="Converting project file 'C:\Users\JohnDoe\Dropbox\v\backconnect\backconnect.vcproj'.">
+</Event><Event ErrorLevel="1" Project="backconnect" Source="..\backconnect\backconnect.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="backconnect" Source="..\backconnect\backconnect.vcproj" Description="Done converting to new project file 'C:\Users\JohnDoe\Dropbox\v\backconnect\backconnect.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="backconnect" Source="..\backconnect\backconnect.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="bot.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="bot.sln" Description="Converted">
+</Event></UpgradeLog>

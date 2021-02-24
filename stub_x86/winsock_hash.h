@@ -1,0 +1,9 @@
+#pragma once
+#define HASH_WS2_32 0xcd0ad72e
+#define HASH_WS2_32_WSASTARTUP 0xa0f5fc93
+#define HASH_WS2_32_WSACLEANUP 0x8e3398bc
+#define HASH_WS2_32_SOCKET 0x05e568bb
+#define HASH_WS2_32_CONNECT 0x74cff91f
+#define HASH_WS2_32_SEND 0xa7733acd
+#define HASH_WS2_32_RECV 0x59d852ad
+#define HASH_WS2_32_CLOSESOCKET 0xa5c6d777

@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 263
+  Height = 208
+  Top = 125
+  Width = 563
+  Caption = 'Vulture Backconnect'
+  ClientHeight = 188
+  ClientWidth = 563
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.4.4.0'
+  object lvConnections: TListView
+    Left = 8
+    Height = 176
+    Top = 8
+    Width = 552
+    Columns = <    
+      item
+        Caption = 'Socket:'
+        Width = 60
+      end    
+      item
+        Alignment = taCenter
+        Caption = 'IP Address (v4):'
+        Width = 100
+      end    
+      item
+        Alignment = taCenter
+        Caption = 'Country:'
+        Width = 100
+      end>
+    PopupMenu = pmConnectionsMenu
+    TabOrder = 0
+    ViewStyle = vsReport
+  end
+  object pmConnectionsMenu: TPopupMenu
+    left = 232
+    top = 3
+    object MenuItem1: TMenuItem
+      Caption = 'Add to socks chain'
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 152
+    top = 3
+    object MenuItem2: TMenuItem
+      Caption = 'Server'
+      object miStartServer: TMenuItem
+        Caption = 'Start server'
+        OnClick = miStartServerClick
+      end
+    end
+  end
+end

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1C181455-3D01-4E93-B685-601A5E9C7F84}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="api.c" />
+    <ClCompile Include="crypto.c" />
+    <ClCompile Include="file.c" />
+    <ClCompile Include="hde32.c" />
+    <ClCompile Include="hooking.c" />
+    <ClCompile Include="httptools.c" />
+    <ClCompile Include="inject.c" />
+    <ClCompile Include="mem.c" />
+    <ClCompile Include="registry.c" />
+    <ClCompile Include="socket.c" />
+    <ClCompile Include="string.c" />
+    <ClCompile Include="tcp_server.c" />
+    <ClCompile Include="thread.c" />
+    <ClCompile Include="utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="advapi32_functions.h" />
+    <ClInclude Include="advapi32_hash.h" />
+    <ClInclude Include="api.h" />
+    <ClInclude Include="api_structs.h" />
+    <ClInclude Include="api_typedefs.h" />
+    <ClInclude Include="bot_structs.h" />
+    <ClInclude Include="crypto.h" />
+    <ClInclude Include="file.h" />
+    <ClInclude Include="hde32.h" />
+    <ClInclude Include="hooking.h" />
+    <ClInclude Include="httptools.h" />
+    <ClInclude Include="inject.h" />
+    <ClInclude Include="kernel32_functions.h" />
+    <ClInclude Include="kernel32_hash.h" />
+    <ClInclude Include="mem.h" />
+    <ClInclude Include="ntdll_functions.h" />
+    <ClInclude Include="ntdll_hash.h" />
+    <ClInclude Include="ntheader.h" />
+    <ClInclude Include="registry.h" />
+    <ClInclude Include="shell32_functions.h" />
+    <ClInclude Include="shell32_hash.h" />
+    <ClInclude Include="shlwapi_functions.h" />
+    <ClInclude Include="shlwapi_hash.h" />
+    <ClInclude Include="socket.h" />
+    <ClInclude Include="stdint.h" />
+    <ClInclude Include="string.h" />
+    <ClInclude Include="table32.h" />
+    <ClInclude Include="tcp_server.h" />
+    <ClInclude Include="thread.h" />
+    <ClInclude Include="urlmon_functions.h" />
+    <ClInclude Include="urlmon_hash.h" />
+    <ClInclude Include="user32_functions.h" />
+    <ClInclude Include="user32_hash.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="utils_typedefs.h" />
+    <ClInclude Include="wininet_functions.h" />
+    <ClInclude Include="wininet_hash.h" />
+    <ClInclude Include="winsock_functions.h" />
+    <ClInclude Include="winsock_hash.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

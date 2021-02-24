@@ -1,0 +1,5 @@
+﻿bc_server.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+bc_server.obj : error LNK2019: unresolved external symbol _TCPServer_Create referenced in function _BCServer_Start
+common.obj : error LNK2019: unresolved external symbol _Crypto_crc32Hash@8 referenced in function _FindProcessIDByHash@4
+common.obj : error LNK2019: unresolved external symbol _Registry_ReadValue referenced in function _Utils_GetPath
+C:\Users\evilbuffer\Desktop\Osiris\bot\Debug\backconnect.exe : fatal error LNK1120: 3 unresolved externals

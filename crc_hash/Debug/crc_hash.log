@@ -1,0 +1,31 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.c
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(23,24): warning C4101: 'dwModuleCount': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(24,19): warning C4101: 'pProcesses': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(16,17): warning C4101: 'ps': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(23,8): warning C4101: 'dwProcessCount': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(27,17): warning C4101: 'mod': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(15,9): warning C4101: 'p': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(23,39): warning C4101: 'i': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(25,18): warning C4101: 'pModules': unreferenced local variable
+C:\Users\evilbuffer\Desktop\Osiris\crc_hash\main.c(28,18): warning C4101: 'proc': unreferenced local variable
+  common.c
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(240,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(256,32): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,41): warning C4047: 'function': 'LPCWSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(428,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,41): warning C4047: 'function': 'LPCSTR' differs in levels of indirection from 'int'
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,33): warning C4024: 'bot': different types for formal and actual parameter 2
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,53): warning C4090: 'function': different 'const' qualifiers
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(446,55): warning C4020: 'bot': too many actual parameters
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(572,28): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\string.c(573,35): warning C4244: '=': conversion from 'DWORD' to 'USHORT', possible loss of data
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,89): warning C4047: 'function': 'LPWSTR' differs in levels of indirection from 'wchar_t (*)[255]'
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(239,83): warning C4024: 'bot': different types for formal and actual parameter 5
+C:\Users\evilbuffer\Desktop\Osiris\common\utils.c(410,63): warning C4047: '=': 'DWORD' differs in levels of indirection from 'HANDLE'
+C:\Users\evilbuffer\Desktop\Osiris\common\crypto.c(19,38): warning C4244: '=': conversion from 'WORD' to 'BYTE', possible loss of data
+  Generating Code...
+common.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  crc_hash.vcxproj -> C:\Users\evilbuffer\Desktop\Osiris\bot\Debug\crc_hash.exe

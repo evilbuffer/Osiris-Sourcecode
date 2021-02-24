@@ -1,0 +1,6 @@
+#pragma once
+
+#define MODULE_ROOTKIT
+#define MODULE_FORMGRABBER
+#define MODULE_BOTKILLER
+#define MODULE_BACKCONNECT

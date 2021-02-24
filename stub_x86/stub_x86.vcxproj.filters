@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Windows Functions">
+      <UniqueIdentifier>{5e207181-f28a-4490-83ab-d0e1d0cee3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Structs">
+      <UniqueIdentifier>{966dcedc-731a-4add-845c-b55431da793b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Typedefs">
+      <UniqueIdentifier>{42c17244-b0ec-4b50-9c77-7911e50a6ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules">
+      <UniqueIdentifier>{4517cb21-b629-4ec3-851d-fb793feedfa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules">
+      <UniqueIdentifier>{707271c0-af0f-449d-a88b-f908909e9e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\Formgrabber">
+      <UniqueIdentifier>{bce0ae68-a1f3-4caf-b981-35d7930241b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\Formgrabber">
+      <UniqueIdentifier>{b954bc1a-b8f2-4a96-b408-b6b2bb4ec63b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\Rootkit">
+      <UniqueIdentifier>{1565de6a-25b9-4f01-8696-7c76fccbe725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\Rootkit">
+      <UniqueIdentifier>{16fb8253-ca7e-4186-9921-8008057676a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\Botkiller">
+      <UniqueIdentifier>{394cfb1d-90ed-43e6-831f-178cf203de5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\Botkiller">
+      <UniqueIdentifier>{c8b1f4a4-d348-47ed-a69f-55ed0a8454c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Modules\Backconnect">
+      <UniqueIdentifier>{02a3410a-4de8-4c80-a033-16b36b4b50ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Modules\Backconnect">
+      <UniqueIdentifier>{71f42e23-ce8c-4ca8-883e-ecb6b1a4b9de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inter-process-communication">
+      <UniqueIdentifier>{3702bee5-214d-4736-acd2-f8e41bd1f10b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Inter-process-communication">
+      <UniqueIdentifier>{740f1098-38aa-4328-9246-c6e21c50fa52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="api.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="inject.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="install.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zombie.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="os_info.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wininet.c">
+      <Filter>Source Files\Modules\Formgrabber</Filter>
+    </ClCompile>
+    <ClCompile Include="nss3.c">
+      <Filter>Source Files\Modules\Formgrabber</Filter>
+    </ClCompile>
+    <ClCompile Include="hook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hde32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formgrabber.c">
+      <Filter>Source Files\Modules\Formgrabber</Filter>
+    </ClCompile>
+    <ClCompile Include="rootkit.c">
+      <Filter>Source Files\Modules\Rootkit</Filter>
+    </ClCompile>
+    <ClCompile Include="botThreads.c">
+      <Filter>Source Files\Modules\Rootkit</Filter>
+    </ClCompile>
+    <ClCompile Include="botkiller.c">
+      <Filter>Source Files\Modules\Botkiller</Filter>
+    </ClCompile>
+    <ClCompile Include="backconnect.c">
+      <Filter>Source Files\Modules\Backconnect</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc.c">
+      <Filter>Source Files\Inter-process-communication</Filter>
+    </ClCompile>
+    <ClCompile Include="pipes.c">
+      <Filter>Source Files\Inter-process-communication</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc_tasks.c">
+      <Filter>Source Files\Inter-process-communication</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernel32_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel32_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="install.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zombie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="user32_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="user32_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="api_structs.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="function_typedefs.h">
+      <Filter>Header Files\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="bot_structs.h">
+      <Filter>Header Files\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils_typedefs.h">
+      <Filter>Header Files\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="api_typedefs.h">
+      <Filter>Header Files\Typedefs</Filter>
+    </ClInclude>
+    <ClInclude Include="wininet_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wininet_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shell32_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="shell32_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="os_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="advapi32_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="advapi32_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="urlmon_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="urlmon_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="wininet.h">
+      <Filter>Header Files\Modules\Formgrabber</Filter>
+    </ClInclude>
+    <ClInclude Include="nss3.h">
+      <Filter>Header Files\Modules\Formgrabber</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="formgrabber.h">
+      <Filter>Header Files\Modules\Formgrabber</Filter>
+    </ClInclude>
+    <ClInclude Include="rootkit.h">
+      <Filter>Header Files\Modules\Rootkit</Filter>
+    </ClInclude>
+    <ClInclude Include="modules.h">
+      <Filter>Header Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="botThreads.h">
+      <Filter>Header Files\Modules\Rootkit</Filter>
+    </ClInclude>
+    <ClInclude Include="botkiller.h">
+      <Filter>Header Files\Modules\Botkiller</Filter>
+    </ClInclude>
+    <ClInclude Include="winsock_functions.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="winsock_hash.h">
+      <Filter>Header Files\Windows Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc.h">
+      <Filter>Header Files\Inter-process-communication</Filter>
+    </ClInclude>
+    <ClInclude Include="backconnect.h">
+      <Filter>Header Files\Modules\Backconnect</Filter>
+    </ClInclude>
+    <ClInclude Include="pipes.h">
+      <Filter>Header Files\Inter-process-communication</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc_tasks.h">
+      <Filter>Header Files\Inter-process-communication</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
